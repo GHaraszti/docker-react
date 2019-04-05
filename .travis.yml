@@ -9,3 +9,16 @@ before_install:
 
 scripts:
   - docker run gharaszti/docker-react npm run test -- --coverage
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "us-west-2"
+#   app: "name-of-app-in-aws"
+#   env: "name-of-env-in-aws"
+#   bucket_name: "elasticbeanstakl-..."
+#   bucket_path: "docker"
+#   on:
+#     branch: master
+#   secret_key_id: $NAME_OF_KEY
+#   secret_access_key:
+#     secure: "$NAME_OF_SECRET_KEY"
